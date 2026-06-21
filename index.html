@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PSIQUIATRIA CLÍNICA - 5º PERÍODO</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+<header class="hero">
+  <div>
+    <span class="eyebrow">MEDCID • Pareto Recursivo</span>
+    <h1>PSIQUIATRIA CLÍNICA - 5º PERÍODO</h1>
+    <p>Revisão estratégica para AP1, AP2 e PF baseada nos materiais, transcrições e provas antigas do Fajardo/Domingos.</p>
+    <div class="heroActions">
+      <button onclick="showTab('questoes')">Treinar questões</button>
+      <button onclick="showTab('revisao')">Revisão de véspera</button>
+      <button class="darkToggleFixed" onclick="toggleDark()">🌙 Modo escuro</button>
+    </div>
+  </div>
+  <div class="scoreBox">
+    <b>Meta</b><strong>80%+</strong><span>Prova com alta repetição histórica</span>
+  </div>
+</header>
+
+<nav class="tabs">
+<button class="active" data-tab="inicio" onclick="showTab('inicio')">Início</button>
+<button data-tab="ap1" onclick="showTab('ap1')">AP1</button>
+<button data-tab="ap2" onclick="showTab('ap2')">AP2</button>
+<button data-tab="pf" onclick="showTab('pf')">PF</button>
+<button data-tab="questoes" onclick="showTab('questoes')">Questões</button>
+<button data-tab="cronograma" onclick="showTab('cronograma')">Cronograma</button>
+<button data-tab="mapas" onclick="showTab('mapas')">Imagens/Mapas</button>
+<button data-tab="revisao" onclick="showTab('revisao')">Revisão Final</button>
+</nav>
+
+<main>
+<section id="inicio" class="tabPage">
+<h2>Início</h2>
+<div class="grid4">
+<div class="card hot"><h3>Assuntos mais cobrados</h3><div><ol><li>Borderline</li><li>Bipolaridade</li><li>Depressão</li><li>Suicídio</li><li>Delirium</li><li>Antidepressivos/BZD/Lítio</li></ol></div></div>
+<div class="card danger"><h3>Assuntos críticos</h3><div><p>Emergência psiquiátrica, risco suicida, agitação, abstinência alcoólica, delirium, mania induzida por antidepressivo.</p></div></div>
+<div class="card fast"><h3>Revisão rápida</h3><div><p>Humor × afeto, delírio × alucinação, antissocial × esquizoide, ADT × ISRS × IMAO, lítio e clozapina.</p></div></div>
+<div class="card ok"><h3>Estratégia 80%</h3><div><p>Priorize provas repetidas: 50% questões, 30% teoria, 20% revisão ativa. Não tente estudar tudo com o mesmo peso.</p></div></div>
+</div>
+
+<div class="panel">
+<h3>Resumo Pareto da disciplina</h3>
+<p><b>Os 20% que mais geram acertos:</b> exame psíquico, emergências, suicídio, depressão, bipolaridade, delirium, psicofármacos, substâncias e personalidade.</p>
+<p><b>Não ignorar:</b> lítio, ISRS, ADT, IMAO, clozapina, benzodiazepínicos, borderline, antissocial, delírio, alucinação e ilusão.</p>
+<p><b>Menor prioridade:</b> detalhes raros de subtipos pouco cobrados, doses muito específicas fora das clássicas e classificações históricas não repetidas.</p>
+</div>
+</section>
+
+
+<section id="ap1" class="tabPage hidden">
+<h2>AP1 — Fundamentos, anamnese, exame psíquico e psicofármacos</h2>
+
+<div class="priority">
+<div><b>🔥 CRÍTICO</b><span>Exame psíquico, humor × afeto, pensamento, delírio, alucinação/ilusão, ISRS, ADT, BZD.</span></div>
+<div><b>⚡ IMPORTANTE</b><span>Antipsicóticos, estabilizadores de humor, lítio, interface Psiquiatria/Psicologia.</span></div>
+<div><b>🟡 SECUNDÁRIO</b><span>História da psiquiatria, psicoterapia, psicanálise e áreas de atuação.</span></div>
+</div>
+
+<h3>1. Anamnese psiquiátrica — visão de prova</h3>
+<p>A anamnese psiquiátrica segue a lógica clínica tradicional, mas é mais longitudinal e funcional. O professor valoriza a ideia de que o diagnóstico psiquiátrico depende de uma boa história clínica, porque não existe exame laboratorial que “feche” depressão, bipolaridade ou esquizofrenia. Exames ajudam a excluir causas orgânicas, estabelecer valores basais antes de psicofármacos e investigar comorbidades.</p>
+<p>Na identificação, alguns dados têm peso epidemiológico e de risco: idade, sexo, profissão, religião, estado civil, escolaridade, filhos, local de moradia e situação social. Exemplos cobrados: médicos têm maior risco de dependência química e suicídio; idosos têm mais demência e delirium; adultos jovens têm mais uso de substâncias e esquizofrenia; mulheres têm mais depressão; homens têm mais uso de substâncias e comportamento antissocial.</p>
+
+<table>
+<tr><th>Parte da anamnese</th><th>Conteúdo que deve aparecer</th><th>Utilidade para prova</th></tr>
+<tr><td>Identificação</td><td>Nome, idade, sexo, profissão, religião, moradia, estado civil, filhos, escolaridade.</td><td>Risco suicida, epidemiologia, diagnóstico diferencial.</td></tr>
+<tr><td>Queixa principal</td><td>O que mais incomoda e há quanto tempo.</td><td>Diferencia quadro agudo, crônico, recorrente e reativo.</td></tr>
+<tr><td>HDA</td><td>Início, evolução, melhora/piora, gatilhos, medidas já tomadas, prejuízo funcional.</td><td>Define depressão, mania, delirium, substância, personalidade.</td></tr>
+<tr><td>Doenças anteriores</td><td>Psiquiátricas, médicas, medicações em uso.</td><td>Hipotireoidismo, anemia, medicações depressogênicas, intoxicação.</td></tr>
+<tr><td>História pessoal</td><td>Pré-natal, infância, adolescência, escolaridade, ocupação, relacionamentos, sexualidade.</td><td>Fundamental para transtornos de personalidade.</td></tr>
+<tr><td>História familiar</td><td>Depressão, bipolaridade, esquizofrenia, suicídio, álcool/drogas.</td><td>Risco genético e recorrência.</td></tr>
+</table>
+
+<h3>2. Exame psíquico — retrato transversal</h3>
+<p>O exame psíquico não começa “depois” da anamnese; começa no primeiro contato. A prova cobra muito a distinção entre perspectiva longitudinal da anamnese e perspectiva transversal do exame psíquico. O exame psíquico descreve o estado mental atual: aparência, comportamento, consciência, orientação, memória, atenção, humor, afeto, pensamento, sensopercepção, crítica, juízo e confiabilidade.</p>
+
+<h4>Descrição geral</h4>
+<table>
+<tr><th>Elemento</th><th>O que observar</th><th>Pegadinha</th></tr>
+<tr><td>Aparência</td><td>Higiene, vestuário, postura, penteado, cuidado corporal.</td><td>Não é julgamento moral; é dado clínico.</td></tr>
+<tr><td>Comportamento psicomotor</td><td>Agitação, lentificação, tiques, acatisia, inquietação, retorcer as mãos.</td><td>Agitação pode ser mania, cocaína, psicose, delirium ou abstinência.</td></tr>
+<tr><td>Atitude com examinador</td><td>Cooperativo, hostil, sedutor, evasivo, apático, desconfiado.</td><td>Ajuda em personalidade, psicose e risco.</td></tr>
+</table>
+
+<h4>Cognição</h4>
+<table>
+<tr><th>Função</th><th>Como avaliar</th><th>O que cai</th></tr>
+<tr><td>Consciência</td><td>Vigil, sonolento, obnubilado, estupor, coma.</td><td>Delirium altera consciência/atenção.</td></tr>
+<tr><td>Orientação</td><td>Tempo, lugar e pessoa.</td><td>Tempo é perdido antes de pessoa.</td></tr>
+<tr><td>Memória</td><td>Remota, passado recente, recente, imediata.</td><td>Demência e delirium.</td></tr>
+<tr><td>Atenção</td><td>Série de 7, soletrar MUNDO ao contrário, observação direta.</td><td>Atenção é chave no delirium.</td></tr>
+<tr><td>Abstração</td><td>Ditados populares e conceitos.</td><td>Concretismo em psicose/baixo nível cognitivo.</td></tr>
+</table>
+
+<h4>Humor × Afeto</h4>
+<p><b>Humor</b> é a emoção abrangente e relativamente constante que colore a percepção do mundo. É perguntado diretamente ao paciente: triste, normal, alegre/irritado? Pode ser <b>hipotímico</b>, <b>eutímico</b> ou <b>hipertímico</b>. <b>Afeto</b> é a expressão externa da resposta emocional: expressão facial, postura, tom de voz e modulação durante a conversa.</p>
+<table>
+<tr><th>Conceito</th><th>Definição</th><th>Exemplo de prova</th></tr>
+<tr><td>Afeto congruente</td><td>Expressão combina com o humor/conteúdo.</td><td>Chora ao relatar perda dolorosa.</td></tr>
+<tr><td>Afeto incongruente</td><td>Expressão não combina com o conteúdo.</td><td>Sorri falando de tragédia.</td></tr>
+<tr><td>Afeto constrito</td><td>Modulação reduzida.</td><td>Responde com pouca variação emocional.</td></tr>
+<tr><td>Afeto embotado/plano</td><td>Muito pouca ou nenhuma expressão.</td><td>Comum em psicose/esquizofrenia.</td></tr>
+</table>
+
+<h4>Pensamento</h4>
+<table>
+<tr><th>Divisão</th><th>Definição</th><th>Termos cobrados</th></tr>
+<tr><td>Curso</td><td>Velocidade com que o pensamento flui.</td><td>Acelerado, lentificado, bloqueio.</td></tr>
+<tr><td>Forma</td><td>Maneira como ideias se encadeiam.</td><td>Circunstancialidade, tangencialidade, fuga de ideias, neologismos.</td></tr>
+<tr><td>Conteúdo</td><td>Tema predominante do pensamento.</td><td>Delírios, obsessões, fobias, ideação suicida/homicida.</td></tr>
+</table>
+
+<p><b>Circunstancialidade:</b> o paciente dá muitas voltas, mas chega ao ponto. <b>Tangencialidade:</b> dá voltas e não chega ao ponto. <b>Fuga de ideias:</b> pensamento acelerado com mudanças rápidas de assunto, comum em mania. <b>Neologismo:</b> criação de palavras, mais comum em psicose.</p>
+
+<h4>Delírio, ilusão e alucinação</h4>
+<table>
+<tr><th>Termo</th><th>Definição</th><th>Como agir</th></tr>
+<tr><td>Delírio</td><td>Ideia falsa, fixa, convicta e incorrigível.</td><td>Não concordar e não confrontar: “entendo que isso é real para você, mas não compartilho dessa interpretação”.</td></tr>
+<tr><td>Ilusão</td><td>Interpretação errada de estímulo real.</td><td>Mais sugestiva de causa orgânica/intoxicação.</td></tr>
+<tr><td>Alucinação</td><td>Percepção sem estímulo externo.</td><td>Auditiva sugere psiquiátrico; visual/tátil/olfativa lembra orgânico/substância.</td></tr>
+</table>
+
+<h3>3. Psicofármacos essenciais da AP1</h3>
+<table>
+<tr><th>Classe</th><th>Exemplos</th><th>Indicações</th><th>Efeitos/pegadinhas</th></tr>
+<tr><td>Benzodiazepínicos</td><td>Diazepam, lorazepam, clonazepam, alprazolam, midazolam.</td><td>Ansiedade aguda, pânico, abstinência alcoólica, convulsão, procedimentos.</td><td>Dependência, tolerância, sonolência, queda, prejuízo cognitivo. Uso curto.</td></tr>
+<tr><td>Antipsicóticos típicos</td><td>Haloperidol, clorpromazina.</td><td>Psicose, agitação, mania, delirium com agitação.</td><td>Haloperidol = alta potência/SEP; clorpromazina = baixa potência/sedação/hipotensão.</td></tr>
+<tr><td>Antipsicóticos atípicos</td><td>Risperidona, olanzapina, quetiapina, clozapina, aripiprazol.</td><td>Psicose, bipolaridade, esquizofrenia, agitação.</td><td>Clozapina = agranulocitose; olanzapina/clozapina = metabólico.</td></tr>
+<tr><td>ISRS</td><td>Fluoxetina, sertralina, paroxetina, citalopram, escitalopram.</td><td>Depressão, ansiedade, TOC, pânico.</td><td>Disfunção sexual, GI, agitação inicial, síndrome serotoninérgica com IMAO.</td></tr>
+<tr><td>Tricíclicos</td><td>Amitriptilina, imipramina, clomipramina, nortriptilina.</td><td>Depressão, pânico, TOC, dor crônica, fibromialgia, enurese.</td><td>Anticolinérgicos, sedação, hipotensão, cardiotoxicidade.</td></tr>
+<tr><td>IMAO</td><td>Tranilcipromina, moclobemida.</td><td>Uso restrito.</td><td>Tiramina/queijos/vinhos → crise hipertensiva.</td></tr>
+<tr><td>Estabilizadores</td><td>Lítio, valproato, carbamazepina.</td><td>Mania, manutenção do bipolar.</td><td>Lítio = litemia, rim, tireoide; valproato = fígado/plaquetas/teratogênico; carbamazepina = hiponatremia/interações.</td></tr>
+</table>
+
+<h3>Resumo final AP1</h3>
+<p>Para 80% da AP1, domine exame psíquico, diferenças semânticas clássicas, psicofármacos de primeira linha e as pegadinhas repetidas: humor não é afeto; delírio não é alucinação; ISRS demora semanas; BZD não é tratamento crônico; ADT tem anticolinérgico/cardiotóxico; clozapina exige hemograma.</p>
+</section>
+
+
+
+<section id="ap2" class="tabPage hidden">
+<h2>AP2 — Emergências, suicídio, delirium, substâncias e personalidade</h2>
+
+<div class="priority">
+<div><b>🔥 CRÍTICO</b><span>Suicídio, ferimentos autoinfligidos, violência/agitação, delirium, abstinência alcoólica, borderline, antissocial.</span></div>
+<div><b>⚡ IMPORTANTE</b><span>Cocaína, cannabis, anfetaminas, álcool, lítio, bipolaridade e antidepressivos.</span></div>
+<div><b>🟡 SECUNDÁRIO</b><span>Dados epidemiológicos menos repetidos e teorias etiológicas detalhadas.</span></div>
+</div>
+
+<h3>1. Emergência psiquiátrica</h3>
+<p>Emergência psiquiátrica exige decisão rápida, mas não impulsiva. A prova cobra a ideia de que o médico deve avaliar risco para si e para terceiros, buscar informações com familiares/SAMU/polícia quando o paciente não consegue informar, e descartar causas orgânicas ou uso de substâncias antes de concluir que é “só psiquiátrico”.</p>
+
+<div class="flow">
+<span>Segurança</span><span>Risco suicida/violento</span><span>Consciência e sinais vitais</span><span>Orgânico/substância</span><span>Contenção se necessário</span><span>Tratamento/encaminhamento</span>
+</div>
+
+<table>
+<tr><th>Situação de erro</th><th>Por que importa</th><th>Conduta esperada</th></tr>
+<tr><td>Trauma craniano</td><td>Sedação pode mascarar rebaixamento.</td><td>Avaliar nível de consciência e lesões.</td></tr>
+<tr><td>Abuso de substâncias</td><td>Cocaína/álcool/BZD simulam quadros psiquiátricos.</td><td>Investigar uso e evitar interações.</td></tr>
+<tr><td>AVC/anormalidades metabólicas</td><td>Podem parecer psicose, confusão ou agitação.</td><td>Investigar sinais clínicos e laboratoriais.</td></tr>
+<tr><td>Medicamentos em uso</td><td>Podem causar delirium, depressão ou sintomas extrapiramidais.</td><td>Revisar lista de fármacos.</td></tr>
+</table>
+
+<h3>2. Suicídio e ferimentos autoinfligidos</h3>
+<p>Suicídio é morte intencional autoinfligida. Em prova, perguntar diretamente sobre ideação suicida não “induz” o ato; pelo contrário, é obrigatório. O roteiro mínimo é: ideação de morte, ideação suicida, plano, meios, intenção, tentativas prévias, substâncias, suporte familiar e fatores protetores.</p>
+
+<table>
+<tr><th>Fatores de risco</th><th>Fatores protetores</th><th>Pegadinhas</th></tr>
+<tr><td>Homem, idoso, depressão, álcool/drogas, tentativa prévia, doença grave, dor crônica, isolamento, desesperança.</td><td>Religião, casamento, filhos, rede de apoio, vínculo terapêutico, tratamento em curso.</td><td>Homens morrem mais; mulheres tentam mais; tentativa prévia é fator de risco; Natal/lua cheia não aumentam procura.</td></tr>
+</table>
+
+<p><b>Ferimento autoinfligido</b> não é automaticamente tentativa de suicídio. O que define é a intenção. Pergunte: “com esses cortes você queria morrer?”. É comum em características borderline e pode ocorrer como tentativa de aliviar tensão, raiva ou sofrimento psíquico.</p>
+
+<h3>3. Violência e comportamento agressivo</h3>
+<p>O maior preditor de comportamento violento é história prévia de violência. Também contam álcool, detenção prévia, atividades criminosas e abuso na infância. A maioria das pessoas violentas não tem transtorno mental, mas psicose, mania, substâncias, delirium e transtornos de personalidade podem estar envolvidos.</p>
+
+<table>
+<tr><th>Se armado</th><th>Se desarmado</th><th>Contenção</th></tr>
+<tr><td>Desarmar apenas com policiais/segurança treinada.</td><td>Abordagem com equipe suficiente, idealmente várias pessoas.</td><td>Ambiente seguro, monitorar sinais vitais, evitar isolamento completo. Contenção física prolongada sem cuidado é inadequada.</td></tr>
+</table>
+
+<h3>4. Delirium</h3>
+<p>Delirium é emergência médica. É uma alteração aguda e flutuante da atenção/consciência/cognição, geralmente por causa orgânica, metabólica, infecciosa, medicamentosa ou substância. Não confundir com delírio: delírio é alteração do conteúdo do pensamento; delirium é alteração global da cognição/consciência.</p>
+
+<table>
+<tr><th>Características</th><th>Risco</th><th>Tratamento</th></tr>
+<tr><td>Início agudo, flutuação, atenção prejudicada, desorganização do pensamento, alteração sono-vigília.</td><td>Idosos, crianças, alcoolistas, demência, doença cerebral, anticolinérgicos.</td><td>Tratar causa, hidratação, orientação ambiental, óculos/aparelho auditivo, antipsicótico se agitação. BZD só em abstinência alcoólica/hipnóticos.</td></tr>
+</table>
+
+<h3>5. Transtornos relacionados a substâncias</h3>
+<p>O uso de substâncias pode imitar praticamente qualquer sintoma psiquiátrico. Em usuário regular com quadro psiquiátrico, primeiro considere relação com a substância e observe melhora com abstinência. O tratamento pode buscar abstinência total ou redução de danos, com suporte psicossocial.</p>
+
+<table>
+<tr><th>Substância</th><th>Quadro típico</th><th>Prova</th></tr>
+<tr><td>Álcool</td><td>Intoxicação, depressão, violência, abstinência, delirium tremens, Korsakoff.</td><td>Abstinência = tremor, taquicardia, HAS, náusea; tratar com BZD.</td></tr>
+<tr><td>Cocaína</td><td>Estimulante: euforia, paranoia, agitação, midríase, HAS, taquicardia.</td><td>Bloqueia recaptação de dopamina, noradrenalina e serotonina.</td></tr>
+<tr><td>Cannabis</td><td>Alterações perceptivas, prejuízo cognitivo/motor, risco de sintomas psicóticos.</td><td>Não confundir com droga “sem risco”.</td></tr>
+<tr><td>Anfetaminas</td><td>Estimulantes, psicose paranoide, hiperalerta.</td><td>Designer drugs podem aumentar catecolaminas e serotonina.</td></tr>
+</table>
+
+<h3>6. Personalidade — foco das provas antigas</h3>
+<table>
+<tr><th>Transtorno</th><th>Núcleo</th><th>Questão que repete</th></tr>
+<tr><td>Antissocial</td><td>Incapacidade de conformar-se às normas + ausência de remorso.</td><td>EXCETO: tendência ao isolamento social.</td></tr>
+<tr><td>Borderline</td><td>Instabilidade afetiva, autoimagem instável, impulsividade, relações caóticas, automutilação.</td><td>Mulher jovem, várias tentativas, conflito com namorado, “não queria morrer”.</td></tr>
+<tr><td>Paranoide</td><td>Desconfiança persistente, interpretações persecutórias sem delírio estruturado.</td><td>Relação com grupo A.</td></tr>
+<tr><td>Esquizoide</td><td>Distanciamento e indiferença afetiva.</td><td>Não sofre intensamente por ficar sem convívio.</td></tr>
+<tr><td>Esquizotípico</td><td>Excentricidade, pensamento mágico, estranheza.</td><td>Grupo A, risco relacionado ao espectro esquizofrênico.</td></tr>
+<tr><td>Dependente</td><td>Submissão, necessidade de cuidado, medo de separação.</td><td>Não lida bem com liderança.</td></tr>
+</table>
+
+<h3>Resumo final AP2</h3>
+<p>AP2 é prova de padrão: suicídio, borderline, antissocial, bipolar pós-antidepressivo, abstinência alcoólica, delirium e emergência com paciente agitado. Treine principalmente os casos clínicos repetidos.</p>
+</section>
+
+
+
+<section id="pf" class="tabPage hidden">
+<h2>PF — Revisão estratégica condensada</h2>
+
+<div class="grid2">
+<div class="panel hot"><h3>Revisão obrigatória</h3>
+<ul>
+<li><b>Borderline:</b> instabilidade afetiva, impulsividade, automutilação, vazio, medo de abandono, micropsicose por estresse.</li>
+<li><b>Antissocial:</b> violação de normas, ausência de remorso, boa inteligência verbal; não é isolamento social.</li>
+<li><b>Bipolaridade:</b> virada maníaca após antidepressivo; suspender antidepressivo e estabilizar humor.</li>
+<li><b>Depressão:</b> humor deprimido/anedonia + sintomas por ≥ 2 semanas, excluir causas orgânicas.</li>
+<li><b>Suicídio:</b> tentativa prévia é fator de risco; perguntar diretamente.</li>
+<li><b>Delirium:</b> início agudo, flutuação, atenção prejudicada e causa orgânica.</li>
+</ul></div>
+
+<div class="panel"><h3>Alto rendimento</h3>
+<ul>
+<li><b>Lítio:</b> dose tóxica próxima da terapêutica, litemia, rim, tireoide.</li>
+<li><b>BZD:</b> curto prazo; abstinência alcoólica; dependência.</li>
+<li><b>ISRS:</b> fluoxetina/sertralina/paroxetina/escitalopram; disfunção sexual; latência em semanas.</li>
+<li><b>ADT:</b> amitriptilina/imipramina/clomipramina; anticolinérgico/cardiotóxico.</li>
+<li><b>IMAO:</b> tiramina/queijos/vinhos → crise hipertensiva.</li>
+<li><b>Clozapina:</b> agranulocitose.</li>
+</ul></div>
+</div>
+
+<h3>Revisão rápida por blocos</h3>
+<table>
+<tr><th>Bloco</th><th>Estudar</th><th>Não perder tempo com</th></tr>
+<tr><td>Personalidade</td><td>Antissocial, borderline, grupos A/B/C, patoplastia.</td><td>Detalhes raros de todos os transtornos.</td></tr>
+<tr><td>Emergência</td><td>Agitação, suicídio, contenção, nível de consciência, intoxicação.</td><td>Protocolos muito específicos não vistos nas provas.</td></tr>
+<tr><td>Psicofármacos</td><td>ISRS, ADT, IMAO, BZD, lítio, valproato, carbamazepina, haloperidol, clozapina.</td><td>Doses raras e fármacos pouco citados.</td></tr>
+<tr><td>Exame psíquico</td><td>Humor/afeto, pensamento, sensopercepção, delírio, insight e julgamento.</td><td>Termos muito pouco repetidos.</td></tr>
+</table>
+
+<h3>Discursivas mais prováveis</h3>
+<ol>
+<li>Critérios/sintomas característicos da esquizofrenia.</li>
+<li>Tratamento inicial do transtorno bipolar com nome, dose e monitorização.</li>
+<li>Diferença entre delírio, alucinação e ilusão.</li>
+<li>Conduta frente a paciente com risco suicida.</li>
+<li>Características do transtorno borderline e antissocial.</li>
+<li>Diagnóstico de depressão maior e tempo mínimo dos sintomas.</li>
+</ol>
+</section>
+
+
+<section id="questoes" class="tabPage hidden">
+<h2>Banco de questões das provas antigas</h2>
+<p class="note"><b>Banco revisado:</b> inclui questões objetivas, V/F, discursivas e casos clínicos transcritos das provas antigas/imagens enviadas. As alternativas agora aparecem com letras A–E e os gabaritos foram redistribuídos para não repetir padrão.</p>
+<div class="filters">
+<select id="subjectFilter" onchange="renderQuestions()"><option value="">Todos os assuntos</option></select>
+<select id="typeFilter" onchange="renderQuestions()"><option value="">Todos os tipos</option></select>
+<input id="searchBox" oninput="renderQuestions()" placeholder="Buscar questão...">
+<button onclick="resetStats()">Zerar desempenho</button>
+</div>
+<div class="stats">
+<span>Respondidas: <b id="answered">0</b></span>
+<span>Acertos: <b id="hits">0</b></span>
+<span>Erros: <b id="miss">0</b></span>
+<span>Aproveitamento: <b id="percent">0%</b></span>
+</div>
+<div id="questionsList"></div>
+</section>
+
+<section id="cronograma" class="tabPage hidden">
+<h2>Cronograma adaptável</h2>
+<div class="planner">
+<label>Data AP1 <input type="date" id="ap1Date"></label>
+<label>Data AP2 <input type="date" id="ap2Date"></label>
+<label>Data PF <input type="date" id="pfDate"></label>
+<label>Horas/dia <input type="number" id="hoursDay" value="2" min="1"></label>
+<button onclick="makePlan()">Gerar cronograma</button>
+</div>
+<div id="planOut"></div>
+<h3>Modelo fixo recomendado</h3>
+<table><tr><th>Bloco</th><th>Atividade</th><th>Proporção</th></tr>
+<tr><td>Teoria</td><td>Revisar mapas e tabelas</td><td>30%</td></tr>
+<tr><td>Questões</td><td>Banco filtrado + correção ativa</td><td>50%</td></tr>
+<tr><td>Revisão</td><td>D+1, D+3, D+7, D+15</td><td>20%</td></tr>
+</table>
+</section>
+
+<section id="mapas" class="tabPage hidden">
+<h2>Imagens / Mapas</h2>
+<div class="mapGrid">
+<div class="mapCard">
+<h3>Algoritmo: Paciente agitado</h3>
+<svg viewBox="0 0 900 230" role="img">
+<rect x="20" y="80" width="130" height="60" rx="14"/><text x="47" y="115">Segurança</text>
+<path d="M150 110 H240"/>
+<rect x="240" y="80" width="160" height="60" rx="14"/><text x="265" y="115">Nível consciência</text>
+<path d="M400 110 H490"/>
+<rect x="490" y="80" width="145" height="60" rx="14"/><text x="510" y="115">Orgânico?</text>
+<path d="M635 110 H715"/>
+<rect x="715" y="80" width="155" height="60" rx="14"/><text x="735" y="115">Medicar/Internar</text>
+</svg>
+</div>
+<div class="mapCard"><h3>Humor × Afeto</h3><p><b>Humor</b>: interno, referido pelo paciente. <b>Afeto</b>: expressão observável. Afeto pode ser congruente/incongruente e variar de normal a plano.</p></div>
+<div class="mapCard"><h3>Personalidade</h3><p>Grupo A: excêntricos. Grupo B: dramáticos/erráticos. Grupo C: ansiosos/temerosos.</p></div>
+<div class="mapCard"><h3>Psicofármacos</h3><p>ISRS = primeira linha; ADT = anticolinérgico/cardiotóxico; IMAO = tiramina; BZD = curto prazo; lítio = litemia; clozapina = hemograma.</p></div>
+</div>
+</section>
+
+<section id="revisao" class="tabPage hidden">
+<h2>Revisão Final</h2>
+<div class="grid2">
+<div class="panel"><h3>2 horas antes da prova</h3><ol><li>Questões 1–18 do banco</li><li>Tabela de personalidade</li><li>Delirium</li><li>Suicídio</li><li>Psicofármacos</li></ol></div>
+<div class="panel"><h3>30 minutos antes</h3><ul><li>Antissocial ≠ isolado</li><li>Borderline = instabilidade + automutilação</li><li>Bipolar = mania/hipomania</li><li>Lítio = janela estreita</li><li>IMAO = tiramina</li><li>Clozapina = agranulocitose</li><li>ECT não causa epilepsia permanente</li></ul></div>
+</div>
+<h3>Discursivas prováveis</h3>
+<ul>
+<li>Critérios do grupo A da esquizofrenia.</li>
+<li>Conduta em risco suicida.</li>
+<li>Diferença entre delírio, alucinação e ilusão.</li>
+<li>Tratamento inicial e manutenção do transtorno bipolar com lítio/valproato.</li>
+<li>Características do transtorno borderline e antissocial.</li>
+</ul>
+</section>
+</main>
+<footer>MedCid • Psiquiatria Clínica • Site offline pronto para GitHub Pages</footer>
+</div>
+<script>const DATA = {"questions": [{"id": 1, "assunto": "Transtornos de personalidade", "tipo": "Múltipla escolha", "dificuldade": "Fácil", "temp": "🔥", "q": "Fazem parte das características dos indivíduos portadores de transtorno da personalidade antissocial, EXCETO:", "alts": ["Desrespeito sistemático de normas e regras sociais.", "Ausência de remorso.", "Potencial de agressividade.", "Tendência ao isolamento social.", "Boa inteligência verbal."], "correctIndex": 3, "comm": "Antissocial em psiquiatria não significa introvertido. Significa padrão persistente de violação de normas, manipulação, impulsividade/agressividade e ausência de remorso. Isolamento social aponta mais para esquizoide/evitativo."}, {"id": 2, "assunto": "Depressão", "tipo": "Múltipla escolha", "dificuldade": "Média", "temp": "🔥", "q": "Quanto ao Transtorno Depressivo podemos afirmar, EXCETO:", "alts": ["Medicamentos de uso continuado, como o propranolol, podem desencadear quadros depressivos.", "Na ocorrência de terceiro episódio depressivo, a recorrência do mesmo supera 90%.", "Aproximadamente um terço dos episódios depressivos está relacionado com situações clínicas crônicas como neoplasias e epilepsia.", "Estudos epidemiológicos genéticos apontam para um determinante genético para o transtorno.", "Apenas adultos podem ser corretamente diagnosticados com este transtorno."], "correctIndex": 4, "comm": "Crianças e adolescentes também podem apresentar transtorno depressivo. A banca repete essa questão como EXCETO."}, {"id": 3, "assunto": "Depressão", "tipo": "Múltipla escolha", "dificuldade": "Fácil", "temp": "🔥", "q": "Em relação ao tratamento farmacológico da Depressão podemos afirmar:", "alts": ["As medicações disponíveis para tratamento apresentam latência de resposta média de 3–6 dias.", "Devem ser suspensos medicamentos tão logo exista remissão dos sintomas depressivos.", "Antidepressivos tricíclicos apresentam melhor padrão de efeitos colaterais que os ISRS.", "Os benzodiazepínicos devem ser utilizados preferencialmente como monoterapia em casos de transtorno depressivo.", "Nenhuma das anteriores."], "correctIndex": 4, "comm": "A latência é de semanas, não dias; não se suspende imediatamente após remissão; ADT tem perfil de efeitos adversos pior; benzodiazepínico não é monoterapia para depressão."}, {"id": 4, "assunto": "Transtornos de personalidade", "tipo": "Múltipla escolha", "dificuldade": "Média", "temp": "🔥", "q": "Sobre os transtornos da personalidade podemos afirmar:", "alts": ["São classificados no eixo I do diagnóstico multiaxial proposto pelo DSM-IV.", "Sua presença exclui a possibilidade de ocorrência de transtorno depressivo no mesmo indivíduo.", "Estes transtornos podem ser diagnosticados ainda na infância, uma vez que os comportamentos desadaptativos iniciam-se precocemente.", "É comum o início destes transtornos no indivíduo senil.", "Podem coexistir com outros transtornos psiquiátricos, alterando a patoplastia destes."], "correctIndex": 4, "comm": "Transtornos de personalidade no DSM-IV ficam no eixo II e podem coexistir com depressão, bipolaridade, dependência química etc., modificando a apresentação clínica."}, {"id": 5, "assunto": "Borderline", "tipo": "Caso clínico", "dificuldade": "Média", "temp": "🔥", "q": "Paciente do sexo feminino, jovem, internada após ingesta de inseticida. Esta é mais uma tentativa de suicídio, já tendo feito abuso de medicação e tentado jogar-se da janela, entre outros métodos. Informa ter realizado o ato após uma discussão com o namorado, quando apresentou quadro alucinatório de vozes ordenando que se matasse. Logo depois chamou a mãe, que a trouxe à emergência. Chora muito, dizendo: “Não quero morrer, não sei por que fiz aquilo”. Nas demais ocasiões, o padrão parece ter sido semelhante. Constantemente pensa e fala em morrer, não refere tristeza/desesperança persistente ou falta de ânimo, apesar de autoestima baixa. A família relata que ela é imprevisível, muda de humor muito rapidamente; em outro episódio, estava tudo ótimo e de noite pegou a chave e saiu sozinha para o Morro do Cristo, deixando bilhete dizendo que queria estar só. Encontra-se em uso de fluoxetina e psicoterapia, sem melhora significativa. Qual o diagnóstico mais provável?", "alts": ["Esquizofrenia hebefrênica.", "Transtorno de humor bipolar.", "Depressão maior.", "Esquizofrenia paranoide.", "Transtorno borderline de personalidade."], "correctIndex": 4, "comm": "O padrão de instabilidade afetiva, impulsividade, crises reativas a conflito interpessoal, automutilação/tentativas recorrentes e medo de abandono favorece TP borderline. Pode haver fenômenos micropsicóticos transitórios sob estresse."}, {"id": 6, "assunto": "Bipolaridade", "tipo": "Caso clínico", "dificuldade": "Média", "temp": "🔥", "q": "Paciente do sexo masculino, 35 anos, trazido pela polícia e família ao pronto-socorro. Após separação da esposa, iniciou período de grande tristeza e desolação, com prejuízo do funcionamento global. Após 2 meses foi levado ao posto de saúde e recebeu diagnóstico de depressão, sendo prescritos fluoxetina 20 mg pela manhã e clonazepam 2 mg à noite. Após 20 dias houve melhora importante; porém, há uma semana, tornou-se agitado, insone, com fala muito acelerada, atitudes inadequadas, interesse sexual evidente, falava alto e ligava TV e som em volume alto. Quando a mãe pediu que desligasse os aparelhos, ficou agressivo e a atacou, sendo trazido pela polícia. Qual o diagnóstico mais plausível?", "alts": ["Esquizofrenia.", "Transtorno de humor bipolar.", "Depressão agitada.", "Delirium.", "Transtorno da personalidade antissocial."], "correctIndex": 1, "comm": "O caso descreve virada maníaca/hipomaníaca após antidepressivo, com redução de sono, aceleração, hipersexualidade, desinibição e agressividade. Conduta provável: suspender antidepressivo e tratar com estabilizador/antipsicótico."}, {"id": 7, "assunto": "Substâncias/Álcool", "tipo": "Caso clínico", "dificuldade": "Média", "temp": "🔥", "q": "Paciente masculino, 35 anos, etilista crônico, chega ao pronto-socorro com sangramento moderado pela cavidade oral e fezes enegrecidas com odor desagradável. Apresenta circulação colateral abdominal e ascite de pequeno volume. Vinte horas após a admissão inicia tremores grosseiros de extremidades, taquicardia, hipertensão arterial, náuseas, vômitos e sintomas de ansiedade. A melhor medicação para o quadro que surge após as vinte horas de observação é:", "alts": ["Diazepam.", "Haloperidol.", "Prometazina.", "Fenobarbital.", "Lorazepam."], "correctIndex": 4, "comm": "Quadro típico de abstinência alcoólica inicial. BZD é a base. Nas provas, o gabarito aparece como lorazepam."}, {"id": 8, "assunto": "Lítio", "tipo": "Múltipla escolha", "dificuldade": "Média", "temp": "🔥", "q": "Em relação ao carbonato de lítio podemos afirmar, EXCETO:", "alts": ["É uma medicação muito segura por apresentar dose terapêutica muito distante da dose tóxica.", "É a primeira escolha para o tratamento de transtorno do humor bipolar do tipo I.", "Sintomas colaterais do seu uso incluem polidipsia, acne e ganho de peso.", "O controle dos níveis dos hormônios tireoidianos deve ser avaliado quando do uso do lítio.", "A apresentação amplamente disponível é em forma de comprimidos de 300 mg."], "correctIndex": 0, "comm": "Lítio tem janela terapêutica estreita, portanto dose terapêutica e dose tóxica são próximas. Exige litemia, função renal e tireoidiana."}, {"id": 9, "assunto": "Síndrome de Korsakoff", "tipo": "Múltipla escolha", "dificuldade": "Fácil", "temp": "⚡", "q": "A deficiência de tiamina produzida por uso persistente de álcool pode resultar em:", "alts": ["Síndrome de Guillain-Barré.", "Delirium tremens.", "Paranoia de ciúmes.", "Paralisias periféricas.", "Síndrome de Korsakoff."], "correctIndex": 4, "comm": "Korsakoff está relacionada à deficiência de tiamina em alcoolistas, geralmente após encefalopatia de Wernicke."}, {"id": 10, "assunto": "Suicídio", "tipo": "Múltipla escolha", "dificuldade": "Média", "temp": "🔥", "q": "Quanto ao suicídio é INCORRETO afirmar:", "alts": ["Idosos apresentam maiores taxas de suicídio consumado que as demais faixas etárias.", "Hiperingesta medicamentosa é um dos métodos mais usados por mulheres para suicídio.", "Tentativas prévias de suicídio mostram caráter manipulador e não são fatores de risco para novas tentativas.", "Homens, com maior frequência, escolhem métodos mais violentos para o suicídio, como armas de fogo ou precipitação de lugares altos.", "Depressão maior é uma morbidade encontrada em parcela significativa da população suicida."], "correctIndex": 2, "comm": "Tentativa prévia é fator de risco importante. A prova usa a palavra 'manipulador' como pegadinha."}, {"id": 11, "assunto": "Ansiedade/Pânico", "tipo": "Caso clínico", "dificuldade": "Média", "temp": "⚡", "q": "Paciente de 25 anos dá entrada em pronto-socorro com queixa de dispneia, taquicardia, dor precordial e sensação de morte iminente há 15 minutos. O paciente relata que nunca apresentou sintomas dessa natureza. A conduta inicial mais acertada para o caso trata-se da alternativa:", "alts": ["Administração de neuroléptico de alta potência e observação clínica.", "Administração de benzodiazepínico de meia vida curta e encaminhamento à psiquiatria ambulatorial.", "Administração de propranolol na dose de 20 mg e observação clínica.", "Avaliação clínica minuciosa em busca de causas não psiquiátricas para os sintomas apresentados.", "Solicitar avaliação psiquiátrica imediata."], "correctIndex": 3, "comm": "Primeiro episódio com sintomas autonômicos e dor torácica exige excluir causa orgânica/cardiológica antes de rotular como pânico."}, {"id": 12, "assunto": "Emergência psiquiátrica", "tipo": "Caso clínico", "dificuldade": "Média", "temp": "🔥", "q": "Na sala de emergência, paciente de 21 anos chega fortemente contido por três policiais que o encontraram caído na estrada ao lado de uma bicicleta quebrada. Junto com o indivíduo foram encontrados apetrechos para uso de cocaína na forma fumada. Está muito agitado e violento, com escoriações na cabeça e no membro inferior direito. Das condutas a seguir, qual NÃO se aplica ao caso?", "alts": ["Aproximação empática.", "Investigar uso de drogas.", "Investigar uso de medicação psiquiátrica.", "Contenção medicamentosa levando-se em conta necessidade de avaliação do nível de consciência.", "Contenção mecânica."], "correctIndex": 3, "comm": "A banca cobra que, em trauma/intoxicação, é perigoso sedar de imediato sem avaliar nível de consciência e causas orgânicas."}, {"id": 13, "assunto": "Depressão", "tipo": "Discursiva", "dificuldade": "Média", "temp": "🔥", "q": "Paciente de 35 anos com depressão maior moderada sem ideação suicida recebeu fluoxetina 20 mg/dia e prometazina para dificuldade para dormir. Elenque sintomas depressivos minimamente suficientes para diagnóstico correto de depressão maior e indique por quanto tempo devem estar presentes.", "alts": [], "correctIndex": null, "comm": "Resposta esperada: humor deprimido e/ou anedonia, associados a sintomas como alteração de sono, apetite/peso, energia, culpa/inutilidade, concentração, psicomotricidade e ideação de morte/suicida, por pelo menos 2 semanas, com prejuízo e exclusão de causas orgânicas/substâncias."}, {"id": 14, "assunto": "Depressão", "tipo": "Discursiva", "dificuldade": "Média", "temp": "🔥", "q": "No caso anterior, após dois meses de uso adequado de fluoxetina na dose prescrita, o paciente apresenta melhora parcial dos sintomas na ordem de 50%. Qual conduta medicamentosa deve ser tomada?", "alts": [], "correctIndex": null, "comm": "Resposta aceita em prova: aumentar/otimizar a dose de fluoxetina e reavaliar após algumas semanas, antes de trocar por outro antidepressivo, já que houve resposta parcial."}, {"id": 15, "assunto": "Transtornos de personalidade", "tipo": "Múltipla escolha", "dificuldade": "Difícil", "temp": "⚡", "q": "Em relação aos transtornos da personalidade é correto afirmar que:", "alts": ["Indivíduos com transtorno da personalidade paranoide têm menor possibilidade de desenvolvimento de esquizofrenia.", "Indivíduos com transtorno da personalidade esquizotípica apresentam grande tendência ao isolamento social.", "Indivíduos com transtorno da personalidade esquizoide têm grande sofrimento quando privados de convívio social.", "Indivíduos com transtorno da personalidade dependente surpreendentemente lidam bem com situações de liderança.", "Nenhuma das alternativas anteriores."], "correctIndex": 4, "comm": "Na prova antiga, a alternativa correta é nenhuma. Esquizoide tende ao isolamento e não sofre tanto por privação social; dependente não lida bem com liderança."}, {"id": 16, "assunto": "Delirium", "tipo": "Múltipla escolha", "dificuldade": "Fácil", "temp": "🔥", "q": "Das características abaixo, temos como parte importante para o diagnóstico de Delirium:", "alts": ["Flutuabilidade do quadro.", "Alterações da atenção.", "Fator causal orgânico.", "Início agudo.", "Todas as anteriores."], "correctIndex": 4, "comm": "Delirium é quadro agudo e flutuante, com alteração de atenção/consciência e causa orgânica/substância/medicamento."}, {"id": 17, "assunto": "Delirium", "tipo": "Múltipla escolha", "dificuldade": "Média", "temp": "🔥", "q": "Pacientes sabidamente mais suscetíveis ao Delirium incluem: 1- mulheres em idade fértil; 2- idosos; 3- crianças; 4- alcoolistas; 5- baixo padrão sociocultural.", "alts": ["1, 2 e 5.", "2, 4 e 5.", "2, 3 e 4.", "3, 4 e 5.", "Nenhuma das anteriores."], "correctIndex": 2, "comm": "Idosos, crianças e alcoolistas são grupos clássicos de risco nas questões enviadas."}, {"id": 18, "assunto": "Exame psíquico", "tipo": "Múltipla escolha", "dificuldade": "Fácil", "temp": "🔥", "q": "Quanto ao exame psíquico podemos afirmar:", "alts": ["A forma de vestir-se de um paciente não deve ser levada em consideração.", "A fala do paciente é a janela que nos coloca em contato com o curso, forma e conteúdo do pensamento.", "O humor pode ser descrito como expressão externa da resposta emocional do paciente.", "O humor que não alterna rapidamente entre extremos pode ser adjetivado como instável.", "No discurso circunstancial espera-se que o paciente não aborde em momento algum o ponto que lhe foi perguntado."], "correctIndex": 1, "comm": "Humor é estado interno; afeto é expressão externa. Circunstancialidade chega ao ponto; tangencialidade não chega."}, {"id": 19, "assunto": "Antidepressivos", "tipo": "Múltipla escolha", "dificuldade": "Fácil", "temp": "🔥", "q": "Qual dos seguintes antidepressivos NÃO é inibidor seletivo da recaptação de serotonina (ISRS)?", "alts": ["Fluoxetina.", "Sertralina.", "Paroxetina.", "Amitriptilina.", "Escitalopram."], "correctIndex": 3, "comm": "Amitriptilina é antidepressivo tricíclico."}, {"id": 20, "assunto": "Antidepressivos", "tipo": "Múltipla escolha", "dificuldade": "Fácil", "temp": "🔥", "q": "Qual é um efeito colateral comum dos inibidores seletivos da recaptação de serotonina (ISRS)?", "alts": ["Insuficiência renal.", "Tontura grave ao levantar, com risco de síncope frequente.", "Redução significativa da pressão arterial.", "Disfunção sexual.", "Insônia terminal obrigatória."], "correctIndex": 3, "comm": "Disfunção sexual é efeito colateral típico e muito cobrado dos ISRS."}, {"id": 21, "assunto": "Antipsicóticos", "tipo": "Múltipla escolha", "dificuldade": "Fácil", "temp": "🔥", "q": "Entre os seguintes antipsicóticos atípicos, qual é o mais associado ao risco de agranulocitose?", "alts": ["Olanzapina.", "Risperidona.", "Quetiapina.", "Clozapina.", "Aripiprazol."], "correctIndex": 3, "comm": "Clozapina exige monitorização hematológica pelo risco de agranulocitose."}, {"id": 22, "assunto": "Estabilizadores de humor", "tipo": "Múltipla escolha", "dificuldade": "Fácil", "temp": "🔥", "q": "Qual dos seguintes medicamentos é um estabilizador de humor que pode ser usado no tratamento do transtorno bipolar?", "alts": ["Diazepam.", "Risperidona.", "Carbamazepina.", "Bupropiona.", "Citalopram."], "correctIndex": 2, "comm": "Carbamazepina é estabilizador de humor. Bupropiona e citalopram são antidepressivos; diazepam é BZD."}, {"id": 23, "assunto": "Ansiedade", "tipo": "Múltipla escolha", "dificuldade": "Fácil", "temp": "⚡", "q": "O tratamento efetivo de longo prazo dos transtornos de ansiedade deve ser realizado utilizando-se qual grupo de medicamentos?", "alts": ["Antipsicóticos.", "Ansiolíticos.", "Estabilizadores de humor.", "Antidepressivos.", "Hipnóticos."], "correctIndex": 3, "comm": "Benzodiazepínicos são úteis no curto prazo; para longo prazo, antidepressivos são base do tratamento de muitos transtornos de ansiedade."}, {"id": 24, "assunto": "Benzodiazepínicos/Hipnóticos", "tipo": "Múltipla escolha", "dificuldade": "Média", "temp": "⚡", "q": "Sobre o uso de hipnóticos e benzodiazepínicos, assinale a alternativa FALSA:", "alts": ["Benzodiazepínicos causam dependência em tratamentos prolongados.", "Hipnóticos não benzodiazepínicos são menos eficazes no tratamento da ansiedade aguda que os benzodiazepínicos.", "Benzodiazepínicos são indicados preferencialmente para uso em curto prazo devido ao risco de dependência e tolerância.", "Hipnóticos não benzodiazepínicos, como zolpidem, são seguros para uso a longo prazo sem riscos de efeitos adversos.", "Benzodiazepínicos não são recomendados como tratamento primário para depressão."], "correctIndex": 3, "comm": "Zolpidem e drogas Z também têm riscos e não devem ser tratados como totalmente seguros a longo prazo."}, {"id": 25, "assunto": "Antidepressivos", "tipo": "V/F", "dificuldade": "Média", "temp": "🔥", "q": "Leia as afirmações: A) ISRS como sertralina e escitalopram costumam ter efeito terapêutico nas primeiras 24–48h. B) Antipsicóticos típicos têm maior chance de causar sintomas extrapiramidais que atípicos. C) Benzodiazepínicos devem ser primeira escolha no tratamento de longo prazo do TAG. D) O uso de lítio exige monitoramento da função tireoidiana e renal. E) Ácido valpróico é boa opção para mania aguda.", "alts": ["F, V, F, V, V.", "V, V, F, V, F.", "F, F, V, V, V.", "F, V, F, F, V.", "V, F, F, V, V."], "correctIndex": 0, "comm": "ISRS demora semanas; típicos dão mais SEP; BZD não é longo prazo; lítio exige monitorização renal/tireoidiana; valproato trata mania."}, {"id": 26, "assunto": "IMAO", "tipo": "Múltipla escolha", "dificuldade": "Fácil", "temp": "🔥", "q": "A grave crise hipertensiva associada ao uso de drogas inibidoras da monoamina oxidase (IMAOs) relaciona-se à ingestão do aminoácido:", "alts": ["Treonina.", "Serina.", "Valina.", "Lisina.", "Tiramina."], "correctIndex": 4, "comm": "Tiramina em queijos/vinhos/fermentados pode causar crise hipertensiva com IMAO."}, {"id": 27, "assunto": "Tricíclicos", "tipo": "Múltipla escolha", "dificuldade": "Média", "temp": "🔥", "q": "Sobre a eficácia dos antidepressivos tricíclicos (ADTs), marque a alternativa INCORRETA:", "alts": ["Na depressão, delírios associados predizem má resposta a essa classe.", "Os ADTs não são eficazes no tratamento do transtorno de pânico.", "A clomipramina apresenta eficácia no tratamento do TOC.", "Anorexia, perda de peso e insônia estão entre fatores preditores de boa resposta aos ADTs.", "Sintomas psicóticos em depressão podem exigir associação com antipsicótico."], "correctIndex": 1, "comm": "Imipramina, clomipramina e nortriptilina podem ser eficazes no transtorno de pânico. Logo, a alternativa que nega eficácia é incorreta."}, {"id": 28, "assunto": "Tricíclicos", "tipo": "Múltipla escolha", "dificuldade": "Média", "temp": "🔥", "q": "Quanto ao uso dos antidepressivos tricíclicos (ADTs), é CORRETO afirmar que:", "alts": ["Apresentam alto índice terapêutico e são seguros mesmo em superdosagem.", "Não apresentam efeitos cardiovasculares, sendo seguros em cardiopatas.", "São isentos de efeito sedativo por não atuarem em receptores histaminérgicos.", "Estão associados a efeitos anticolinérgicos como boca seca, constipação e retenção urinária.", "Em idosos não apresentam riscos de uso."], "correctIndex": 3, "comm": "ADT tem efeitos anticolinérgicos, cardiotoxicidade e baixo índice terapêutico."}, {"id": 29, "assunto": "IMAO", "tipo": "Múltipla escolha", "dificuldade": "Fácil", "temp": "🔥", "q": "Os antidepressivos denominados inibidores da monoaminoxidase (IMAOs) apresentam risco para importante interação com alimentos conhecida como:", "alts": ["Reação dos queijos e vinhos, pois estes alimentos são ricos em fenilalanina.", "Reação dos queijos e vinhos, pois estes alimentos são ricos em tiramina.", "Reação do arroz e feijão, pois estes alimentos são ricos em tiramina.", "Reação do arroz e feijão, pois estes alimentos são ricos em alanina.", "Reação dos cafés e doces, pois estes alimentos são ricos em dopamina."], "correctIndex": 1, "comm": "Outra forma da mesma pegadinha: reação do queijo/vinho = tiramina."}, {"id": 30, "assunto": "ISRS", "tipo": "V/F", "dificuldade": "Média", "temp": "⚡", "q": "Mulher de 38 anos com depressão maior grave, sem sintomas psicóticos, iniciou fluoxetina 20 mg/dia, titulada para 40 mg/dia após 3 semanas. Julgue: A) pode haver agitação e piora da ansiedade no início; B) se engravidar, deve suspender obrigatoriamente por não ser segura; C) pode haver piora gastrointestinal; D) fluoxetina é contraindicada se clearance de creatinina for inferior a 10 mL/min; E) meia-vida longa favorece retirada com menos sintomas.", "alts": ["V, F, V, V, V.", "V, F, V, F, V.", "F, F, V, V, V.", "V, V, V, F, V.", "F, V, F, V, F."], "correctIndex": 0, "comm": "Pelas anotações da disciplina, a prova considerou fluoxetina contraindicada em ClCr <10 mL/min. Gestação não implica suspensão obrigatória automática."}, {"id": 31, "assunto": "ISRS", "tipo": "Múltipla escolha", "dificuldade": "Média", "temp": "⚡", "q": "Sobre os ISRS, assinale a alternativa INCORRETA:", "alts": ["São preferencialmente indicados em pacientes ambulatoriais com história de intolerância aos tricíclicos.", "Um dos efeitos colaterais graves é a síndrome serotoninérgica, com maior risco em interação com IMAO.", "Podem causar sintomas neurológicos extrapiramidais como distonias e parkinsonismo.", "Foi relatada alta incidência de teratogenicidade associada ao uso de ISRS na gestação.", "Fluvoxamina e sertralina foram aprovadas para tratamento de TOC em crianças."], "correctIndex": 3, "comm": "A prova considera que não há alta incidência de teratogenicidade associada aos ISRS; essa é a incorreta."}, {"id": 32, "assunto": "Venlafaxina", "tipo": "Múltipla escolha", "dificuldade": "Difícil", "temp": "🟡", "q": "Texto-base: estudos mostram eficácia e segurança da venlafaxina, inclusive em pacientes internados com depressão grave; comparada à amitriptilina, demonstrou eficácia semelhante e melhor tolerabilidade; apresenta baixa ligação a proteínas plasmáticas e pouca interferência com enzimas hepáticas. Essa afirmativa favorece o uso de venlafaxina:", "alts": ["Em populações geriátricas e com problemas clínicos.", "Em pacientes com necessidade de maior efeito sedativo.", "Em pacientes com alto risco de efeitos anticolinérgicos.", "Em indivíduos com histórico de hipertensão arterial não controlada.", "Em pacientes que necessitam de forte bloqueio muscarínico central."], "correctIndex": 0, "comm": "O texto destaca tolerabilidade e baixa interação, favorecendo uso em geriatria/comorbidades. Atenção: venlafaxina pode elevar PA, então hipertensão descontrolada não é boa indicação."}, {"id": 33, "assunto": "ECT", "tipo": "Múltipla escolha", "dificuldade": "Média", "temp": "⚡", "q": "Sobre eletroconvulsoterapia, podemos afirmar, EXCETO:", "alts": ["A principal indicação é em transtornos refratários ao tratamento clínico de primeira linha.", "As contraindicações estão, em sua maioria, relacionadas ao risco anestésico.", "A ECT leva a efeitos colaterais relacionados ao uso como desencadeamento de doença epiléptica com necessidade posterior de anticonvulsivante.", "A convulsão desencadeada pela corrente elétrica deve ter duração aproximada de 30 segundos para ser efetiva.", "Ainda existe desinformação sobre os benefícios da ECT, contribuindo para estigmatização."], "correctIndex": 2, "comm": "ECT induz convulsão terapêutica controlada e anestesiada; não é tratamento de epilepsia nem causa doença epiléptica permanente."}]};</script>
+<script src="script.js"></script>
+</body>
+</html>
